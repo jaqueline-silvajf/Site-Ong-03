@@ -1,0 +1,257 @@
+/* =========================================================
+   Organização Solidária - Estilo Base
+   Compatível com: index.html, projetos.html e cadastro.html
+   ========================================================= */
+
+/* ===== Reset e base tipográfica ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background-color: #f9f9f9;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== Cabeçalho ===== */
+header {
+  background-color: #006d5b;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 4px solid #00bfa6;
+}
+
+header img {
+  max-width: 120px;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.3rem;
+}
+
+header address,
+header p {
+  font-style: normal;
+  font-size: 0.95rem;
+}
+
+/* ===== Navegação principal ===== */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 0.8rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #00bfa6;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover,
+nav a:focus,
+nav a[aria-current="page"] {
+  background-color: #004f42;
+}
+
+/* ===== Estrutura principal ===== */
+main {
+  flex: 1;
+  padding: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+section, article {
+  margin-bottom: 2rem;
+}
+
+h2, h3 {
+  color: #006d5b;
+  margin-bottom: 0.8rem;
+}
+
+/* ===== Imagens e figuras ===== */
+figure {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+figure img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+figcaption {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 0.4rem;
+}
+
+/* ===== Listas e links ===== */
+ul {
+  list-style: disc inside;
+}
+
+a {
+  color: #00796b;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Formulário ===== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+fieldset {
+  border: 2px solid #00bfa6;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+legend {
+  font-weight: bold;
+  color: #006d5b;
+  padding: 0 0.5rem;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 0.3rem;
+  font-size: 1rem;
+}
+
+input:focus,
+select:focus {
+  outline: 2px solid #00bfa6;
+  border-color: #00bfa6;
+}
+
+small {
+  color: #555;
+  font-size: 0.85rem;
+}
+
+/* ===== Botões ===== */
+button {
+  background-color: #00bfa6;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.7rem 1.4rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover,
+button:focus {
+  background-color: #008c77;
+}
+
+button[type="reset"] {
+  background-color: #aaa;
+  margin-left: 0.5rem;
+}
+
+button[type="reset"]:hover {
+  background-color: #888;
+}
+
+/* ===== Rodapé ===== */
+footer {
+  background-color: #006d5b;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.95rem;
+  border-top: 4px solid #00bfa6;
+}
+
+/* ===== Responsividade ===== */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+}
+
+/* ===== Acessibilidade extra ===== */
+:focus {
+  outline: 3px solid #ffcc00;
+  outline-offset: 2px;
+}
+
+[aria-current="page"] {
+  font-weight: bold;
+}
+
+/* ===== Correção de contraste: links do cabeçalho ===== */
+header a,
+header a:visited {
+  color: #f6f7f8; /* amarelo claro para melhor contraste */
+  font-weight: 600;
+  text-decoration: none;
+}
+
+header a:hover,
+header a:focus {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+header .contato {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
