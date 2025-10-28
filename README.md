@@ -1,6 +1,9 @@
 # Entrega-Atividade-03
 🌐 **Projeto:** Estrutura HTML5, CSS3 e JavaScript - Semântica  
 
+Repositório: https://github.com/jaqueline-silvajf/Site-Ong-03.git <br>
+Site da Página: https://jaqueline-silvajf.github.io/Site-Ong-03/
+
 > Projeto desenvolvido como exercício prático de HTML5, CSS e JavaScript, com foco em estrutura semântica, estilização e interatividade de páginas.  
 
 ---
